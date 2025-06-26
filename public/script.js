@@ -72,3 +72,15 @@ ScrollReveal().reveal('.hero-content, .heading', { origin: 'top' });
 ScrollReveal().reveal('.hero-img, .keahlian-container, .proyek-container, .kontak form', { origin: 'bottom' });
 ScrollReveal().reveal('.hero-content h1, .tentang-img', { origin: 'left' });
 ScrollReveal().reveal('.hero-content p, .tentang-content', { origin: 'right' });
+
+// =========================================================================
+// BAGIAN 4: LOGIKA UNTUK EFEK MENGETIK (TYPED.JS)
+// =========================================================================
+const typed = new Typed('.efek-ketik', {
+    // Ganti array strings ini dengan daftar profesi/keahlian Anda
+    strings: ['Undergraduate', 'Fullstack Developer', 'Cyber Security Enthusiast'],
+    typeSpeed: 100,      // Kecepatan mengetik (dalam milidetik)
+    backSpeed: 50,       // Kecepatan menghapus (dalam milidetik)
+    backDelay: 2000,     // Waktu tunggu sebelum mulai menghapus
+    loop: true           // Ulangi animasi terus menerus
+});
