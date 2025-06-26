@@ -1,0 +1,213 @@
+<!-- NAMA FILE: index.html -->
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+    <!-- Pengaturan dasar halaman web -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portofolio | Nama Anda</title>
+
+    <!-- Menghubungkan ke file CSS untuk styling -->
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Menghubungkan ke library Boxicons untuk ikon-ikon keren -->
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+
+<body>
+
+    <!-- ============================================= -->
+    <!-- BAGIAN HEADER / NAVIGASI -->
+    <!-- ============================================= -->
+    <header class="header">
+        <!-- Logo di sisi kiri -->
+        <a href="#" class="logo">Portofolio.</a>
+
+        <!-- Ikon menu untuk tampilan mobile -->
+        <i class='bx bx-menu' id="menu-icon"></i>
+
+        <!-- Daftar link navigasi -->
+        <nav class="navbar">
+            <a href="#hero" class="active">Home</a>
+            <a href="#tentang">Tentang</a>
+            <a href="#keahlian">Keahlian</a>
+            <a href="#proyek">Proyek</a>
+            <a href="#kontak">Kontak</a>
+        </nav>
+    </header>
+
+    <!-- ============================================= -->
+    <!-- Konten Utama Halaman -->
+    <!-- ============================================= -->
+    <main>
+        <!-- BAGIAN HERO / HALAMAN UTAMA -->
+        <section class="hero" id="hero">
+            <!-- Konten teks di sebelah kiri -->
+            <div class="hero-content">
+                <h1>Hai, Saya <span>Yudha Rifal Kelana</span></h1>
+                <h3>Undergraduate student from UMRAH | Fullstack</h3>
+                <p>Saya seorang mahasiswa yang bersemangat dalam membuat web yang fungsional, modern,
+                    dan menarik secara visual. Selamat datang di portofolio pribadi saya.</p>
+                <!-- Kotak tombol -->
+                <div class="btn-box">
+                    <a href="#kontak" class="btn">Hubungi Saya</a>
+                </div>
+            </div>
+
+            <!-- Ikon media sosial -->
+            <div class="hero-sci">
+                <a href="#"><i class='bx bxl-instagram'></i></a>
+                <a href="#"><i class='bx bxl-linkedin'></i></a>
+                <a href="#"><i class='bx bxl-github'></i></a>
+            </div>
+
+            <!-- Gambar utama di sebelah kanan -->
+            <div class="hero-img">
+                <!-- Ganti 'src' dengan path ke gambar Anda, misalnya 'images/foto-saya.png' -->
+                <img src="../public/images/DSCF8666.JPG" alt="Foto Profil">
+            </div>
+        </section>
+
+        <!-- BAGIAN TENTANG SAYA -->
+        <section class="tentang" id="tentang">
+            <h2 class="heading">Tentang <span>Saya</span></h2>
+            <!-- Gambar dengan bingkai berputar -->
+            <div class="tentang-img">
+                <img src="../public/images/DSCF8670.JPG" alt="Tentang Saya">
+                <span class="circle-spin"></span>
+            </div>
+            <!-- Konten teks tentang diri Anda -->
+            <div class="tentang-content">
+                <h3>Fullstack Developer</h3>
+                <p>
+                    Dengan pengalaman lebih dari 3 tahun, saya memiliki keahlian dalam tumpukan teknologi modern untuk
+                    membangun dan memelihara situs web. Saya fokus pada pengalaman pengguna yang mulus dan performa yang
+                    cepat. Di luar coding, saya suka belajar teknologi baru dan berkontribusi pada proyek open-source.
+                </p>
+                <a href="#" class="btn">Baca Selengkapnya</a>
+            </div>
+        </section>
+
+        <!-- BAGIAN KEAHLIAN -->
+        <section class="keahlian" id="keahlian">
+            <h2 class="heading">Keahlian <span>Saya</span></h2>
+            <!-- Wadah untuk semua kotak keahlian -->
+            <div class="keahlian-container">
+                <!-- Kotak Keahlian 1 -->
+                <div class="keahlian-box">
+                    <i class='bx bxl-html5'></i>
+                    <h3>HTML5</h3>
+                </div>
+                <!-- Kotak Keahlian 2 -->
+                <div class="keahlian-box">
+                    <i class='bx bxl-css3'></i>
+                    <h3>CSS3</h3>
+                </div>
+                <!-- Kotak Keahlian 3 -->
+                <div class="keahlian-box">
+                    <i class='bx bxl-javascript'></i>
+                    <h3>JavaScript</h3>
+                </div>
+                <!-- Kotak Keahlian 4 -->
+                <div class="keahlian-box">
+                    <i class='bx bxl-python'></i>
+                    <h3>Python</h3>
+                </div>
+                <!-- Kotak Keahlian 5 -->
+                <div class="keahlian-box">
+                    <i class='bx devicon-c'></i>
+                    <h3>C</h3>
+                </div>
+                <!-- Kotak Keahlian 6 -->
+                <div class="keahlian-box">
+                    <i class='bx bxl-github'></i>
+                    <h3>GitHub</h3>
+                </div>
+                <!-- Kotak Keahlian 7 -->
+                <div class="keahlian-box">
+                    <i class='bx bxl-'></i>
+                    <h3>C++</h3>
+                </div>
+            </div>
+        </section>
+
+        <!-- BAGIAN PROYEK -->
+        <section class="proyek" id="proyek">
+            <h2 class="heading">Proyek <span>Terbaru</span></h2>
+            <!-- Wadah untuk semua proyek -->
+            <div class="proyek-container">
+                <!-- Proyek 1 -->
+                <div class="proyek-box">
+                    <img src="https://placehold.co/600x400/112e42/00abf0?text=Proyek+Satu" alt="Proyek 1">
+                    <div class="proyek-layer">
+                        <h4>Website Perusahaan</h4>
+                        <p>Desain ulang website profil perusahaan ABC dengan fokus pada mobile-first.</p>
+                        <a href="#"><i class='bx bx-link-external'></i></a>
+                    </div>
+                </div>
+                <!-- Proyek 2 -->
+                <div class="proyek-box">
+                    <img src="https://placehold.co/600x400/112e42/00abf0?text=Proyek+Dua" alt="Proyek 2">
+                    <div class="proyek-layer">
+                        <h4>Dashboard Analitik</h4>
+                        <p>Membangun dashboard interaktif untuk visualisasi data penjualan.</p>
+                        <a href="#"><i class='bx bx-link-external'></i></a>
+                    </div>
+                </div>
+                <!-- Proyek 3 -->
+                <div class="proyek-box">
+                    <img src="https://placehold.co/600x400/112e42/00abf0?text=Proyek+Tiga" alt="Proyek 3">
+                    <div class="proyek-layer">
+                        <h4>Aplikasi E-Commerce</h4>
+                        <p>Platform belanja online berbasis React dengan manajemen state.</p>
+                        <a href="#"><i class='bx bx-link-external'></i></a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- BAGIAN KONTAK -->
+        <section class="kontak" id="kontak">
+            <h2 class="heading">Kontak <span>Saya</span></h2>
+            <!-- Form kontak -->
+            <form action="#">
+                <div class="input-box">
+                    <input type="text" placeholder="Nama Lengkap">
+                    <input type="email" placeholder="Alamat Email">
+                </div>
+                <div class="input-box">
+                    <input type="number" placeholder="Nomor Telepon">
+                    <input type="text" placeholder="Subjek Email">
+                </div>
+                <textarea name="" id="" cols="30" rows="10" placeholder="Pesan Anda"></textarea>
+                <input type="submit" value="Kirim Pesan" class="btn">
+            </form>
+        </section>
+    </main>
+
+    <!-- ============================================= -->
+    <!-- BAGIAN FOOTER -->
+    <!-- ============================================= -->
+    <footer class="footer">
+        <!-- Teks hak cipta -->
+        <div class="footer-text">
+            <p>Hak Cipta &copy; 2025 oleh Nama Anda | Semua Hak Dilindungi.</p>
+        </div>
+        <!-- Tombol untuk kembali ke atas -->
+        <div class="footer-iconTop">
+            <a href="#hero"><i class='bx bx-up-arrow-alt'></i></a>
+        </div>
+    </footer>
+
+    <!-- ============================================= -->
+    <!-- JAVASCRIPT LIBRARIES & KUSTOM -->
+    <!-- ============================================= -->
+    <!-- Library ScrollReveal untuk animasi saat scroll -->
+    <script src="https://unpkg.com/scrollreveal"></script>
+
+    <!-- Menghubungkan ke file JavaScript kustom -->
+    <script src="script.js"></script>
+</body>
+
+</html>
