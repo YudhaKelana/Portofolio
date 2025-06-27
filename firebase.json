@@ -1,6 +1,6 @@
 {
   "hosting": {
-    "site": "yudhakelana",
+    "site": "YudhaKelana",
     "public": "public",
     "ignore": [
       "firebase.json",
