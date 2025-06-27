@@ -78,8 +78,8 @@ ScrollReveal().reveal('.hero-content p, .tentang-content', { origin: 'right' });
 const typed = new Typed('.efek-ketik', {
     // Ganti array strings ini dengan daftar profesi/keahlian Anda
     strings: ['Undergraduate', 'Fullstack Developer', 'Cyber Security Enthusiast'],
-    typeSpeed: 100,      // Kecepatan mengetik (dalam milidetik)
+    typeSpeed: 50,      // Kecepatan mengetik (dalam milidetik)
     backSpeed: 50,       // Kecepatan menghapus (dalam milidetik)
-    backDelay: 2000,     // Waktu tunggu sebelum mulai menghapus
+    backDelay: 1000,     // Waktu tunggu sebelum mulai menghapus
     loop: true           // Ulangi animasi terus menerus
 });
