@@ -15,7 +15,6 @@
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
 
     <!-- Menghubungkan ke library Devicon untuk ikon bahasa pemrograman -->
-    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.15.1/devicon.min.css">
 </head>
 
@@ -84,115 +83,98 @@
             </div>
             <!-- Konten teks tentang diri Anda -->
             <div class="tentang-content">
-                <h3>Engineer & Musisi!</h3>
+                <h3>Developer & Problem Solver!</h3>
                 <p>
-                    Sebagai seorang mahasiswa yang memiliki antusias pada Fullstack Development & Cyber Security, saya
-                    berdedikasi untuk membangun aplikasi web yang modern dan aman. Saya selalu antusias mempelajari
-                    teknologi baru untuk mempertajam keahlian saya.
-
-                    Di luar dunia digital, saya memiliki passion di bidang musik. Pengalaman tampil bermain gitar dan
-                    perkusi di berbagai acara telah mengajarkan saya pentingnya kolaborasi, disiplin, dan
-                    kreativitas—nilai-nilai yang juga saya terapkan dalam setiap proyek yang saya kerjakan.
+                    Saya adalah mahasiswa Teknik Informatika semester 6 dengan fokus pada Fullstack Web Development dan
+                    Cyber Security — membangun aplikasi yang tidak hanya fungsional, tetapi juga aman. Pengalaman nyata
+                    saya tercermin melalui berbagai proyek di sektor UMKM, mulai dari pembuatan website bisnis hingga
+                    pengembangan aplikasi mobile yang membantu pelaku usaha berkembang di era digital. Saya terbiasa
+                    menerjemahkan kebutuhan klien menjadi solusi teknologi yang tepat sasaran, mudah digunakan, dan siap
+                    bersaing — karena bagi saya, teknologi yang baik adalah teknologi yang berdampak nyata. Di sela
+                    aktivitas tersebut, saya juga aktif bermusik sebagai pemain gitar dan perkusi, yang melatih saya
+                    untuk selalu berkolaborasi dan berpikir kreatif dalam setiap pekerjaan.
                 </p>
-                <a href="#" class="btn">Baca Selengkapnya</a>
+                <a href="#kontak" class="btn">Hubungi Saya</a>
             </div>
         </section>
 
         <!-- BAGIAN KEAHLIAN -->
         <section class="keahlian" id="keahlian">
             <h2 class="heading">Keahlian <span>Saya</span></h2>
-            <!-- Wadah untuk semua kotak keahlian -->
+            <!-- Wadah untuk semua kotak keahlian (dikelompokkan per kategori) -->
             <div class="keahlian-container">
-                <!-- Kotak Keahlian Utama -->
-                <!-- Keahlian Utama: Web Development & Keamanan (Paling Penting!) -->
+
+                <!-- Kategori 1: Web Development -->
                 <div class="keahlian-box">
-                    <i class='bx bxs-shield-alt-2'></i>
-                    <h3>Keamanan</h3>
-                    <p>Membangun aplikasi web full-stack dengan PHP murni, serta mengimplementasikan hashing (Scrypt,
-                        HKDF) dan enkripsi (AES-256-GCM) untuk keamanan data.</p>
+                    <div class="keahlian-box-header">
+                        <i class='bx bxl-html5'></i>
+                        <h3>Web Development</h3>
+                    </div>
+                    <p>Membangun antarmuka web yang responsif dan modern serta mengelola logika server-side.</p>
+                    <div class="skill-tags">
+                        <span><i class='bx bxl-html5'></i> HTML5</span>
+                        <span><i class='bx bxl-css3'></i> CSS3</span>
+                        <span><i class='bx bxl-javascript'></i> JavaScript</span>
+                        <span><i class='bx bxl-php'></i> PHP</span>
+                    </div>
                 </div>
 
-                <!-- Keahlian Frontend -->
+                <!-- Kategori 2: Keamanan Siber -->
                 <div class="keahlian-box">
-                    <i class='bx bxl-html5'></i>
-                    <h3>HTML5</h3>
-                    <p>Membuat struktur web yang semantik dan aksesibel untuk pengalaman pengguna yang lebih baik dan
-                        SEO-friendly.</p>
-                </div>
-                <div class="keahlian-box">
-                    <i class='bx bxl-css3'></i>
-                    <h3>CSS3</h3>
-                    <p>Merancang layout yang responsif dan modern menggunakan Flexbox & Grid untuk tampilan optimal di
-                        semua perangkat.</p>
-                </div>
-
-                <!-- Keahlian JavaScript -->
-                <div class="keahlian-box">
-                    <i class='bx bxl-javascript'></i>
-                    <h3>JavaScript</h3>
-                    <p>Membangun logika interaktif di sisi klien (client-side) dan melakukan manipulasi DOM untuk
-                        website yang dinamis.</p>
+                    <div class="keahlian-box-header">
+                        <i class='bx bxs-shield-alt-2'></i>
+                        <h3>Keamanan Siber</h3>
+                    </div>
+                    <p>Mengimplementasikan enkripsi dan hashing untuk melindungi data pengguna pada aplikasi web.</p>
+                    <div class="skill-tags">
+                        <span><i class='bx bxs-lock-alt'></i> AES-256-GCM</span>
+                        <span><i class='bx bxs-key'></i> Scrypt & HKDF</span>
+                        <span><i class='bx bxs-shield-alt-2'></i> Secure Auth</span>
+                    </div>
                 </div>
 
-                <!-- Fondasi Ilmu Komputer -->
+                <!-- Kategori 3: Bahasa Pemrograman -->
                 <div class="keahlian-box">
-                    <i class='devicon-cplusplus-plain'></i>
-                    <h3>C++</h3>
-                    <p>Menguasai konsep fundamental Pemrograman Berorientasi Objek (PBO) seperti Class, Inheritance, dan
-                        Polymorphism.</p>
-                </div>
-                <div class="keahlian-box">
-                    <i class='devicon-c-plain'></i>
-                    <h3>C Language</h3>
-                    <p>Implementasi struktur data kompleks seperti Linked List, Tree, dan Graph untuk pemecahan masalah
-                        yang efisien.</p>
-                </div>
-
-                <!-- Bahasa & Database Lainnya -->
-                <div class="keahlian-box">
-                    <i class='bx bxl-python'></i>
-                    <h3>Python</h3>
-                    <p>Digunakan untuk scripting, pemecahan masalah algoritmik, dan eksplorasi dasar-dasar pengembangan
-                        backend.</p>
-                </div>
-                <div class="keahlian-box">
-                    <i class='devicon-mysql-plain'></i>
-                    <h3>MySQL</h3>
-                    <p>Merancang skema database dan mengelola data relasional menggunakan query SQL untuk mendukung
-                        aplikasi web.</p>
+                    <div class="keahlian-box-header">
+                        <i class='bx bx-code-alt'></i>
+                        <h3>Bahasa Pemrograman</h3>
+                    </div>
+                    <p>Menguasai konsep OOP, struktur data, dan algoritma melalui berbagai bahasa pemrograman.</p>
+                    <div class="skill-tags">
+                        <span><i class='devicon-c-plain'></i> C</span>
+                        <span><i class='devicon-cplusplus-plain'></i> C++</span>
+                        <span><i class='bx bxl-python'></i> Python</span>
+                    </div>
                 </div>
 
-                <!-- Tools & Version Control -->
+                <!-- Kategori 4: Database & Tools -->
                 <div class="keahlian-box">
-                    <i class='bx bxl-github'></i>
-                    <h3>Git & GitHub</h3>
-                    <p>Manajemen kode dan kolaborasi tim menggunakan Git untuk version control, termasuk alur kerja
-                        seperti branching dan merging.</p>
+                    <div class="keahlian-box-header">
+                        <i class='bx bxs-data'></i>
+                        <h3>Database & Tools</h3>
+                    </div>
+                    <p>Mengelola data relasional dan menggunakan version control untuk kolaborasi pengembangan.</p>
+                    <div class="skill-tags">
+                        <span><i class='devicon-mysql-plain'></i> MySQL</span>
+                        <span><i class='bx bxl-github'></i> Git & GitHub</span>
+                    </div>
                 </div>
-                <!-- Keahlian Musik: Gitar -->
+
+                <!-- Kategori 5: Musik -->
                 <div class="keahlian-box">
-                    <!-- Saya menggunakan ikon 'bxs-music' dari Boxicons untuk konsistensi -->
-                    <i class='bx bxs-music'></i>
-                    <h3>Gitar Akustik</h3>
-                    <p>Sentuhan aransemen melodi dan harmoni, melatih kreativitas dan kemampuan adaptasi dalam
-                        bermusik.</p>
+                    <div class="keahlian-box-header">
+                        <i class='bx bxs-music'></i>
+                        <h3>Musik</h3>
+                    </div>
+                    <p>Melatih kreativitas, kedisiplinan, dan kemampuan berkolaborasi melalui penampilan di berbagai acara.</p>
+                    <div class="skill-tags">
+                        <span><i class='bx bxs-music'></i> Gitar Akustik</span>
+                        <span><i class='bx bxs-cube-alt'></i> Cajon</span>
+                        <span><i class='bx bxs-album'></i> Rebana</span>
+                    </div>
                 </div>
-                <!-- Keahlian Musik: Cajon -->
-                <div class="keahlian-box">
-                    <!-- Ikon 'bxs-cube-alt' secara abstrak mewakili bentuk Cajon (drum kotak) -->
-                    <i class='bx bxs-cube-alt'></i>
-                    <h3>Perkusi (Cajon)</h3>
-                    <p>Menjaga tempo dan membangun fondasi ritmis dalam sebuah grup, melatih kedisiplinan dan kerja sama
-                        tim.</p>
-                </div>
-                <!-- Keahlian Musik: Rebana -->
-                <div class="keahlian-box">
-                    <!-- Ikon 'bxs-album' mewakili bentuk Rebana (drum bingkai bundar) -->
-                    <i class='bx bxs-album'></i>
-                    <h3>Musik Tradisional (Rebana)</h3>
-                    <p>Memahami dan melestarikan ritme musik tradisional, menunjukkan kemampuan berkolaborasi dalam
-                        ansambel musik.</p>
-                </div>
+
+            </div>
         </section>
 
         <!-- BAGIAN PROYEK -->
@@ -200,42 +182,106 @@
             <h2 class="heading">Proyek <span>Unggulan</span></h2>
             <!-- Wadah untuk semua proyek -->
             <div class="proyek-container">
-                <!-- Proyek 1 -->
+
+                <!-- Proyek 1: SIM-KIP -->
                 <div class="proyek-box">
-                    <img src="https://placehold.co/600x400/112e42/00abf0?text=Proyek+Satu" alt="Proyek 1">
+                    <img src="https://placehold.co/600x400/112e42/f0f000?text=SIM-KIP" alt="Proyek SIM-KIP">
                     <div class="proyek-layer">
+                        <span class="proyek-tag">Web Security</span>
                         <h4>Website SIM-KIP</h4>
-                        <p>Proyek mata kuliah sistem keamanan, yang befokus pada keamanan database dan password untuk Sistem Informasi dan Manajemen KIP.</p>
-                        <a href="https://github.com/YudhaKelana/siskem_SIMKIP" target="_blank"><i
-                                class='bx bx-link-external'></i></a>
+                        <p>Proyek mata kuliah sistem keamanan, fokus pada keamanan database dan password untuk Sistem Informasi Manajemen KIP.</p>
+                        <div class="proyek-btns">
+                            <a href="https://github.com/YudhaKelana/siskem_SIMKIP" target="_blank" class="proyek-btn">
+                                <i class='bx bxl-github'></i> GitHub
+                            </a>
+                        </div>
                     </div>
                 </div>
-                <!-- Proyek 2 -->
+
+                <!-- Proyek 2: TanjungpinangEats -->
                 <div class="proyek-box">
-                    <img src="https://placehold.co/600x400/112e42/00abf0?text=Proyek+Dua" alt="Proyek 2">
+                    <img src="https://placehold.co/600x400/112e42/f0f000?text=TanjungpinangEats" alt="Proyek TanjungpinangEats">
                     <div class="proyek-layer">
+                        <span class="proyek-tag">Web App</span>
                         <h4>TanjungpinangEats</h4>
-                        <p>Proyek hasil kolaborasi. Pembuatan web untuk pengkategorian restaurant dan cafe yang
-                            ada di Kota Tanjungpinang.</p>
-                        <a href="https://github.com/YudhaKelana/TanjungpinangEats" target="_blank"></a><i
-                                class='bx bx-link-external'></i></a>    
-                        <a href="https://tanjungpinangeats.web.app/" target="_blank"><i
-                                class='bx bx-link-external'></i></a>
+                        <p>Proyek kolaborasi. Web pengkategorian restoran dan kafe di Kota Tanjungpinang.</p>
+                        <div class="proyek-btns">
+                            <a href="https://github.com/YudhaKelana/TanjungpinangEats" target="_blank" class="proyek-btn">
+                                <i class='bx bxl-github'></i> GitHub
+                            </a>
+                            <a href="https://tanjungpinangeats.web.app/" target="_blank" class="proyek-btn proyek-btn-live">
+                                <i class='bx bx-globe'></i> Live Demo
+                            </a>
+                        </div>
                     </div>
                 </div>
-                <!-- Proyek 3 -->
+
+                <!-- Proyek 3: Greenhouse Automation -->
                 <div class="proyek-box">
-                    <img src="https://placehold.co/600x400/112e42/00abf0?text=Proyek+Tiga" alt="Proyek 3">
+                    <img src="https://placehold.co/600x400/112e42/f0f000?text=Greenhouse+IOT" alt="Proyek Greenhouse Automation">
                     <div class="proyek-layer">
+                        <span class="proyek-tag">IoT</span>
                         <h4>Greenhouse Automation</h4>
-                        <p>Proyek kolaborasi. Otomatisasi greenhouse berbasis IOT, menggunakan 3 jenis sensor
-                            dan perangkat output.</p>
-                        <a href="https://github.com/YudhaKelana/Greenhouse-Automation" target="_blank"><i
-                                class='bx bx-link-external'></i></a>
-                        <a href="https://otomatisasi-rumah-kaca.web.app" target="_blank"><i
-                                class='bx bx-link-external'></i></a>
+                        <p>Proyek kolaborasi. Otomatisasi greenhouse berbasis IoT menggunakan 3 jenis sensor dan perangkat output.</p>
+                        <div class="proyek-btns">
+                            <a href="https://github.com/YudhaKelana/Greenhouse-Automation" target="_blank" class="proyek-btn">
+                                <i class='bx bxl-github'></i> GitHub
+                            </a>
+                            <a href="https://otomatisasi-rumah-kaca.web.app" target="_blank" class="proyek-btn proyek-btn-live">
+                                <i class='bx bx-globe'></i> Live Demo
+                            </a>
+                        </div>
                     </div>
                 </div>
+
+                <!-- Proyek 4: Siomay88 Hackathon -->
+                <div class="proyek-box">
+                    <img src="https://placehold.co/600x400/112e42/f0f000?text=Siomay88" alt="Proyek Siomay88">
+                    <div class="proyek-layer">
+                        <span class="proyek-tag">Hackathon · UMKM</span>
+                        <h4>Website Siomay88</h4>
+                        <p>Proyek hackathon BISDI — website profil dan pemasaran digital untuk UMKM kuliner Siomay88.</p>
+                        <div class="proyek-btns">
+                            <a href="https://github.com/YudhaKelana/hackathon-bisdi" target="_blank" class="proyek-btn">
+                                <i class='bx bxl-github'></i> GitHub
+                            </a>
+                            <a href="https://siomay88.my.id" target="_blank" class="proyek-btn proyek-btn-live">
+                                <i class='bx bx-globe'></i> Live Demo
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Proyek 5: POS Warung Z&Z -->
+                <div class="proyek-box">
+                    <img src="https://placehold.co/600x400/112e42/f0f000?text=POS+Warung+Z%26Z" alt="Proyek POS Warung Z&Z">
+                    <div class="proyek-layer">
+                        <span class="proyek-tag">UMKM · Mobile App</span>
+                        <h4>Sistem POS Warung Z&amp;Z</h4>
+                        <p>Aplikasi Point of Sale berbasis mobile untuk pengelolaan transaksi dan stok di Warung Z&amp;Z.</p>
+                        <div class="proyek-btns">
+                            <a href="https://github.com/YudhaKelana/project_pipl" target="_blank" class="proyek-btn">
+                                <i class='bx bxl-github'></i> GitHub
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Proyek 6: Kerja Praktik SIMPENAGIHAN -->
+                <div class="proyek-box">
+                    <img src="https://placehold.co/600x400/112e42/f0f000?text=SIMPENAGIHAN" alt="Proyek Kerja Praktik SIMPENAGIHAN">
+                    <div class="proyek-layer">
+                        <span class="proyek-tag">Kerja Praktik · Gov</span>
+                        <h4>SIMPENAGIHAN</h4>
+                        <p>Sistem informasi penagihan untuk UPTD PPD Kota Tanjungpinang — proyek Kerja Praktik resmi.</p>
+                        <div class="proyek-btns">
+                            <a href="https://github.com/YudhaKelana/KuliahPraktik_simpenagihan" target="_blank" class="proyek-btn">
+                                <i class='bx bxl-github'></i> GitHub
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
             </div>
         </section>
 

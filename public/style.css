@@ -304,36 +304,81 @@ section {
 
 .keahlian-container {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    gap: 1rem;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
     justify-content: center;
 }
 
 .keahlian-box {
     background: var(--second-bg-color);
-    padding: 3rem 1rem;
-    border-radius: .8rem;
-    text-align: center;
+    padding: 2.5rem;
+    border-radius: 1rem;
+    text-align: left;
     border: .2rem solid var(--bg-color);
     transition: .5s ease;
+    display: flex;
+    flex-direction: column;
+    gap: 1.2rem;
 }
 
 .keahlian-box:hover {
     border-color: var(--main-color);
-    transform: translateY(-1rem);
+    transform: translateY(-0.8rem);
+    box-shadow: 0 0 1.5rem rgba(240, 240, 0, 0.15);
 }
 
-.keahlian-box i {
-    font-size: 7rem;
+/* Header kartu: ikon besar + judul kategori sejajar horizontal */
+.keahlian-box-header {
+    display: flex;
+    align-items: center;
+    gap: 1.2rem;
+}
+
+.keahlian-box-header i {
+    font-size: 3.5rem;
     color: var(--main-color);
+    flex-shrink: 0;
 }
 
-.keahlian-box h3 {
-    font-size: 2.6rem;
-    margin: 1rem 0;
+.keahlian-box-header h3 {
+    font-size: 2rem;
+    font-weight: 600;
 }
 
 .keahlian-box p {
+    font-size: 1.4rem;
+    color: #b0b0b0;
+    line-height: 1.6;
+}
+
+/* Tag-tag skill individual di dalam setiap kartu */
+.skill-tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: .8rem;
+    margin-top: .5rem;
+}
+
+.skill-tags span {
+    display: inline-flex;
+    align-items: center;
+    gap: .5rem;
+    background: rgba(240, 240, 0, 0.1);
+    border: .1rem solid rgba(240, 240, 0, 0.3);
+    color: var(--main-color);
+    font-size: 1.2rem;
+    font-weight: 500;
+    padding: .4rem 1rem;
+    border-radius: 2rem;
+    transition: .3s;
+}
+
+.skill-tags span:hover {
+    background: rgba(240, 240, 0, 0.2);
+    border-color: var(--main-color);
+}
+
+.skill-tags span i {
     font-size: 1.4rem;
 }
 
@@ -352,20 +397,27 @@ section {
 
 .proyek-box {
     position: relative;
-    border-radius: .8rem;
+    border-radius: 1rem;
     overflow: hidden;
     box-shadow: 0 0 1rem rgba(0, 0, 0, .3);
+    transition: .3s ease;
+}
+
+.proyek-box:hover {
+    box-shadow: 0 0 2rem rgba(240, 240, 0, .2);
+    transform: translateY(-.5rem);
 }
 
 .proyek-box img {
     width: 100%;
+    height: 22rem;
+    object-fit: cover;
     display: block;
     transition: .5s ease;
 }
 
 .proyek-box:hover img {
-    transform: scale(1.1);
-    /* Efek zoom saat hover */
+    transform: scale(1.07);
 }
 
 .proyek-layer {
@@ -374,44 +426,92 @@ section {
     left: 0;
     width: 100%;
     height: 100%;
-    background: linear-gradient(rgba(8, 27, 41, 0.5), var(--main-color));
+    background: linear-gradient(to top, rgba(8, 27, 41, 0.98) 40%, rgba(8, 27, 41, 0.6) 100%);
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    padding: 0 2rem;
+    justify-content: flex-end;
+    align-items: flex-start;
+    text-align: left;
+    padding: 2rem 2.5rem;
     opacity: 0;
-    transition: .5s ease;
+    transition: .4s ease;
 }
 
 .proyek-box:hover .proyek-layer {
     opacity: 1;
-    /* Munculkan layer saat hover */
+}
+
+/* Badge kategori proyek */
+.proyek-tag {
+    display: inline-block;
+    background: rgba(240, 240, 0, 0.15);
+    border: .1rem solid rgba(240, 240, 0, 0.4);
+    color: var(--main-color);
+    font-size: 1.1rem;
+    font-weight: 600;
+    padding: .3rem .9rem;
+    border-radius: 2rem;
+    letter-spacing: .05rem;
+    margin-bottom: .8rem;
 }
 
 .proyek-layer h4 {
-    font-size: 2.4rem;
+    font-size: 2rem;
+    font-weight: 700;
+    color: var(--text-color);
+    margin-bottom: .5rem;
 }
 
 .proyek-layer p {
-    font-size: 1.5rem;
-    margin: .5rem 0 1.5rem;
+    font-size: 1.35rem;
+    color: #b8c8d8;
+    margin-bottom: 1.5rem;
+    line-height: 1.5;
 }
 
-.proyek-layer a {
+/* Container untuk tombol-tombol proyek */
+.proyek-btns {
+    display: flex;
+    gap: 1rem;
+    flex-wrap: wrap;
+}
+
+/* Tombol proyek (GitHub) */
+.proyek-btn {
     display: inline-flex;
-    justify-content: center;
     align-items: center;
-    width: 5rem;
-    height: 5rem;
-    background: var(--text-color);
-    border-radius: 50%;
+    gap: .5rem;
+    padding: .7rem 1.5rem;
+    background: rgba(255, 255, 255, 0.1);
+    border: .15rem solid rgba(255, 255, 255, 0.3);
+    color: var(--text-color);
+    font-size: 1.3rem;
+    font-weight: 500;
+    border-radius: 2rem;
+    transition: .3s ease;
+    cursor: pointer;
 }
 
-.proyek-layer a i {
-    font-size: 2.5rem;
-    color: var(--second-bg-color);
+.proyek-btn:hover {
+    background: rgba(255, 255, 255, 0.2);
+    border-color: var(--text-color);
+}
+
+.proyek-btn i {
+    font-size: 1.6rem;
+}
+
+/* Tombol Live Demo (aksen warna kuning) */
+.proyek-btn-live {
+    background: rgba(240, 240, 0, 0.15);
+    border-color: rgba(240, 240, 0, 0.5);
+    color: var(--main-color);
+}
+
+.proyek-btn-live:hover {
+    background: rgba(240, 240, 0, 0.3);
+    border-color: var(--main-color);
+    color: var(--main-color);
 }
 
 /* ============================================= */
@@ -526,8 +626,19 @@ section {
     }
 }
 
+/* Untuk layar tablet: grid 2 kolom */
+@media (max-width: 991px) {
+    .keahlian-container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
 /* Untuk layar mobile */
 @media (max-width: 768px) {
+    .keahlian-container {
+        grid-template-columns: 1fr;
+    }
+
     #menu-icon {
         display: block;
         /* Tampilkan ikon menu */
